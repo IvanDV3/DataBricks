@@ -1,0 +1,16 @@
+gateways:
+  databricks:
+    connection:
+      type: databricks
+      server_hostname: "dbc-d958891e-10e9.cloud.databricks.com"
+      http_path: "/sql/1.0/warehouses/da56da77777f5771"
+      access_token: "{{ env_var('DATABRICKS_TOKEN') }}"
+
+    state_connection:
+      type: duckdb
+      database: ".sqlmesh/state.db"
+
+default_gateway: databricks
+
+model_defaults:
+  dialect: databricks

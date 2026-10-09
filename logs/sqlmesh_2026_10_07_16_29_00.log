@@ -1,0 +1,2 @@
+2026-10-07 16:29:01,293 - MainThread - root - INFO - Shutting down the event dispatcher (dispatcher.py:159)
+2026-10-07 16:29:01,603 - MainThread - sqlmesh.core.analytics.dispatcher - INFO - Failed to emit events: HTTPSConnectionPool(host='analytics.tobikodata.com', port=443): Max retries exceeded with url: /v1/sqlmesh/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1077)'))) (dispatcher.py:138)
